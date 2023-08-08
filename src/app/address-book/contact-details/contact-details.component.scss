@@ -1,0 +1,29 @@
+:host {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(var(--spacing-default) / 2);
+}
+
+.app-button {
+  margin-top: var(--spacing-default);
+}
+
+app-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+picture {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: var(--spacing-default) 0;
+
+  .profile-image {
+    width: 100%;
+    border-radius: 50%;
+  }
+}

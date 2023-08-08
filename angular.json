@@ -69,7 +69,11 @@
               "browserTarget": "quote-inviter:build:production"
             },
             "development": {
-              "browserTarget": "quote-inviter:build:development"
+              "browserTarget": "quote-inviter:build:development",
+              "headers": {
+                "Access-Control-Allow-Origin": "adorable.io",
+                "Access-Control-Allow-Methods": "GET"
+              }
             }
           },
           "defaultConfiguration": "development"

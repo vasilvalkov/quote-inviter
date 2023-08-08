@@ -1,0 +1,4 @@
+<button type="button" app-icon-button (click)="cartService.toggleOpen()">
+  <i-feather [name]="(cartService.isOpen | async) ? 'inbox' : 'at-sign'"></i-feather>
+  <app-invitees-count app-badge></app-invitees-count>
+</button>

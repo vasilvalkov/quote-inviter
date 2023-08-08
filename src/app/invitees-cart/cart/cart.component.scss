@@ -1,0 +1,54 @@
+$internal-spacing: 8px;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  width: min(100%, 768px);
+  height: 100%;
+
+  @media (min-width: 768px) {
+    height: revert;
+  }
+}
+
+.form-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+  padding: $internal-spacing $internal-spacing 0;
+
+  input {
+    position: relative;
+    height: 48px;
+    flex: 1;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .app-button {
+    padding: 0 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+.actions-wrapper {
+  display: flex;
+  gap: var(--spacing-default);
+  margin-top: auto;
+  padding: 0 $internal-spacing;
+
+  &>button {
+    flex: 1;
+  }
+}
+
+ul {
+  margin: 16px 0;
+  overflow-y: auto;
+}

@@ -1,0 +1,44 @@
+$alignment-padding: 8px;
+
+:host {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: $alignment-padding;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 10px;
+  height: 24px;
+  line-height: 24px;
+
+  .action-wrapper {
+    display: flex;
+    align-items: center;
+    flex-basis: 24px;
+  }
+}
+
+.contacts-list {
+  overflow-y: auto;
+
+  input {
+    pointer-events: none;
+  }
+}
+
+h2 {
+  padding-left: $alignment-padding;
+  padding-right: 32px;
+  margin-bottom: 16px;
+}
+
+app-close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}

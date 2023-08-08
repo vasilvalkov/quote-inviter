@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-default) var(--spacing-default) 0;
+}
+
+app-cart-toggle {
+  margin-right: 32px;
+}

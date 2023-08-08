@@ -1,0 +1,19 @@
+<app-close-button (close)="closed.emit()"></app-close-button>
+
+<h2>{{ group.name }}</h2>
+
+<div class="summary">
+  <h4><em>{{ group.data.counterparties.length }} members</em></h4>
+  <span class="action-wrapper">
+    <input type="checkbox" [checked]="group | isSelectedContact" (change)="onChange($event, group)">
+  </span>
+</div>
+
+<ul class="contacts-list">
+  <li *ngFor="let contact of group.data.counterparties; trackBy:trackbyFn">
+    <app-contact-list-item [contact]="contact" (click)="toggleChecked(checkbox)">
+      <input #checkbox list-item-action type="checkbox" [checked]="contact | isSelectedContact"
+        (change)="onChange($event, contact)" />
+    </app-contact-list-item>
+  </li>
+</ul>

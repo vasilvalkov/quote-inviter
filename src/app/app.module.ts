@@ -1,18 +1,36 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
+import { SharedModule } from './shared';
+import { AddressBookModule } from './address-book/address-book.module';
+import { HeaderComponent } from './header/header.component';
+import { ThemeService } from './shared/services/theme.service';
+import { InviteesCartModule } from './invitees-cart/invitees-cart.module';
+
+function initializeTheme(themeService: ThemeService) {
+  return () => themeService.init();
+}
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    SharedModule
+    SharedModule,
+    AddressBookModule,
+    InviteesCartModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeTheme,
+      multi: true,
+      deps: [ThemeService]
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

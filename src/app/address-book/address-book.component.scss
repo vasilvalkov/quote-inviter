@@ -1,0 +1,71 @@
+:host {
+  display: grid;
+  grid-template-columns: max(100%, 320px) max(100%, 320px);
+  grid-template-rows: minmax(0, 1fr); // 100% of height
+  align-items: start;
+  height: 100%;
+  gap: var(--spacing-default);
+
+  app-card:first-child {
+    height: 100%;
+  }
+
+  .details-container {
+    height: 100%;
+    transform: translateX(calc((100% + var(--spacing-default)) * -1));
+
+    .details-panel {
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(336px, 30%));
+
+    .details-container {
+      height: revert;
+      transform: none;
+
+      .details-panel {
+        height: revert;
+      }
+    }
+  }
+}
+
+.input-container {
+  position: relative;
+
+  input {
+    padding-right: 32px;
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: transparent;
+  }
+}
+
+.list-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .search-wrapper {
+    position: sticky;
+    top: 0;
+    padding: 8px;
+
+    input {
+      width: 100%;
+      height: 48px;
+    }
+  }
+
+  .contacts-list {
+    overflow-y: auto;
+  }
+}

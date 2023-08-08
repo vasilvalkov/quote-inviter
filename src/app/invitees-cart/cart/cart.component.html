@@ -1,0 +1,20 @@
+<form class="form-wrapper" (ngSubmit)="onAddEmail()">
+  <input type="email" [formControl]="emailControl" placeholder="Add an e-mail address" />
+  <button app-button [disabled]="!emailControl.valid">Add</button>
+</form>
+
+<ul>
+  <li app-list-item *ngFor="let invitee of invitees | async">
+    {{ invitee }}
+    <button type="button" app-icon-button size="small" (click)="onRemoveInvite(invitee)">
+      <i-feather name="x"></i-feather>
+    </button>
+  </li>
+</ul>
+
+<section class="actions-wrapper">
+  <button type="button" app-button color="primary" [disabled]="(invitees|async).length === 0"
+    (click)="onSendInvitations()">
+    Send&nbsp;<app-invitees-count></app-invitees-count>&nbsp;invitations
+  </button>
+</section>

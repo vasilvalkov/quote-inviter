@@ -1,0 +1,7 @@
+:host {
+  display: block;
+  background: var(--color-secondary-bg);
+  color: var(--color-secondary-text);
+  padding: calc(var(--spacing-default) / 2);
+  border-radius: 8px;
+}

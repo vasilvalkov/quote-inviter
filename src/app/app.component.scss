@@ -1,0 +1,55 @@
+:host {
+  --header-height: calc(48px + var(--spacing-default));
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+app-header {
+  height: var(--header-height);
+}
+
+main {
+  flex: 1;
+  max-height: calc(100% - var(--header-height));
+  position: relative;
+  /* Enable hiding of address bar on mobile when portrait */
+  min-height: 100%;
+
+  .cart {
+    position: absolute;
+    top: var(--spacing-default);
+    right: var(--spacing-default);
+    bottom: var(--spacing-default);
+    left: var(--spacing-default);
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 78px;
+      display: block;
+      width: 0;
+      height: 0;
+      transform: translateY(-100%);
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      border-bottom: calc(18px + var(--spacing-default)) solid var(--color-secondary-bg);
+    }
+  }
+
+  @media (min-width: 500px) {
+    /* Remove for non-mobile browsers and landscape */
+    min-height: revert;
+  }
+
+  @media (min-width: 768px) {
+    .cart {
+      left: unset;
+      bottom: unset;
+    }
+  }
+}

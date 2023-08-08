@@ -1,0 +1,22 @@
+<app-list-item>
+  <button class="details-container" (click)="onSelectItem()">
+    <div class="avatar-wrapper">
+      <ng-container *ngIf="$any(contact.data).picture; else groupImg">
+        <img [src]="$any(contact.data).picture" alt="" />
+      </ng-container>
+      <ng-template #groupImg>
+        <i-feather class="group-icon" name="users"></i-feather>
+      </ng-template>
+    </div>
+
+    <div class="info">
+      <span><strong>{{ contact.name }}</strong></span>
+      <span class="overflow-ellipsis">{{ $any(contact.data).email }}</span>
+      <small *ngIf="contact.type === 'group'">{{ $any(contact.data).counterparties.length }} members</small>
+    </div>
+  </button>
+
+  <div class="action-container">
+    <ng-content select="[list-item-action]"></ng-content>
+  </div>
+</app-list-item>

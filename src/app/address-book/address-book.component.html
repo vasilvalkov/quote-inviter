@@ -1,0 +1,41 @@
+<app-card>
+  <section class="list-panel">
+    <div class="search-wrapper">
+      <div class="input-container">
+        <input [formControl]="searchControl" placeholder="Type to filter..." />
+        <button *ngIf="searchControl.value" app-icon-button type="button" (click)="onClearSearch()">
+          <i-feather name="x"></i-feather>
+        </button>
+      </div>
+    </div>
+    <ul class="contacts-list">
+      <li *ngFor="let contact of contacts | async; trackBy:trackbyFn">
+        <app-contact-list-item [contact]="contact"
+          [ngClass]="{ active: contact === selectedContact }"
+          (selectItem)="selectItem($event)"
+        >
+          <input list-item-action type="checkbox" [checked]="contact | isSelectedContact" (change)="onChange($event, contact)" />
+        </app-contact-list-item>
+      </li>
+    </ul>
+  </section>
+</app-card>
+
+<app-card *ngIf="selectedContact" class="details-container">
+  <section class="details-panel">
+    <ng-container [ngSwitch]="selectedContact.type">
+      <ng-container *ngSwitchCase="'individual'" [ngTemplateOutlet]="individualDetails"
+        [ngTemplateOutletContext]="selectedContact"></ng-container>
+      <ng-container *ngSwitchCase="'group'" [ngTemplateOutlet]="groupDetails"
+        [ngTemplateOutletContext]="{group: selectedContact}"></ng-container>
+    </ng-container>
+  </section>
+</app-card>
+
+<ng-template #individualDetails let-data="data" let-selected="selected">
+  <app-contact-details [contact]="data" [selected]="selected" (closed)="onClearSelected()"></app-contact-details>
+</ng-template>
+
+<ng-template #groupDetails let-data="group">
+  <app-group-details [group]="data" (closed)="onClearSelected()"></app-group-details>
+</ng-template>

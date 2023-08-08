@@ -1,7 +1,7 @@
 [
   {
     "_id": "5ee887de652a4f1b907a456a",
-    "picture": "https://api.adorable.io/avatars/64/berta.hobbs@irackbank.com.png",
+    "picture": "assets/img/avatars/bertha-hobbs.jpg",
     "name": {
       "first": "Berta",
       "last": "Hobbs"
@@ -13,7 +13,7 @@
   },
   {
     "_id": "5ee887de653704b4af63245b",
-    "picture": "https://api.adorable.io/avatars/64/deanne.moody@xelegyl.ca.png",
+    "picture": "assets/img/avatars/deanne-moody.jpg",
     "name": {
       "first": "Deanne",
       "last": "Moody"
@@ -25,7 +25,7 @@
   },
   {
     "_id": "5ee887def9d2b34bb1591099",
-    "picture": "https://api.adorable.io/avatars/64/della.hodges@inear.co.uk.png",
+    "picture": "assets/img/avatars/della-hodges.jpg",
     "name": {
       "first": "Della",
       "last": "Hodges"
@@ -37,7 +37,7 @@
   },
   {
     "_id": "5ee887dec8545a7d2db2ed36",
-    "picture": "https://api.adorable.io/avatars/64/trisha.baxter@nurplex.us.png",
+    "picture": "assets/img/avatars/trisha-baxter.jpg",
     "name": {
       "first": "Trisha",
       "last": "Baxter"
@@ -48,7 +48,7 @@
   },
   {
     "_id": "5ee887de6ea3cca41e9f25e2",
-    "picture": "https://api.adorable.io/avatars/64/joyner.summers@daisu.io.png",
+    "picture": "assets/img/avatars/joyner-summers.jpg",
     "name": {
       "first": "Joyner",
       "last": "Summers"
@@ -60,7 +60,7 @@
   },
   {
     "_id": "5ee887dee59f7a4fde2bb0e8",
-    "picture": "https://api.adorable.io/avatars/64/luna.knight@fangold.net.png",
+    "picture": "assets/img/avatars/luna-knight.jpg",
     "name": {
       "first": "Luna",
       "last": "Knight"
@@ -72,7 +72,7 @@
   },
   {
     "_id": "5ee887de3496debf296b8f9b",
-    "picture": "https://api.adorable.io/avatars/64/burks.vaughan@rockyard.com",
+    "picture": "assets/img/avatars/burks-vaugham.jpg",
     "name": {
       "first": "Burks",
       "last": "Vaughan"
@@ -84,7 +84,7 @@
   },
   {
     "_id": "5ee887de89f85f09ded7716b",
-    "picture": "https://api.adorable.io/avatars/64/naomi.zamora@virva.info.png",
+    "picture": "assets/img/avatars/naoimi-zamara.jpg",
     "name": {
       "first": "Naomi",
       "last": "Zamora"
@@ -96,7 +96,7 @@
   },
   {
     "_id": "5ee887ded1dc5bb554d62031",
-    "picture": "https://api.adorable.io/avatars/64/yates.francis@genmy.fr.png",
+    "picture": "assets/img/avatars/yates-francis.jpg",
     "name": {
       "first": "Yates",
       "last": "Francis"
@@ -107,7 +107,7 @@
   },
   {
     "_id": "5ee887de79bb5eec0dd7c596",
-    "picture": "https://api.adorable.io/avatars/64/dickerson.pope@cowtown.biz.png",
+    "picture": "assets/img/avatars/dickerson-pope.jpg",
     "name": {
       "first": "Dickerson",
       "last": "Pope"
@@ -119,7 +119,7 @@
   },
   {
     "_id": "5ee887de38926957bc5820e9",
-    "picture": "https://api.adorable.io/avatars/64/dianne.brooks@zboo.com.png",
+    "picture": "assets/img/avatars/dianne-brooks.jpg",
     "name": {
       "first": "Dianne",
       "last": "Brooks"
@@ -131,7 +131,7 @@
   },
   {
     "_id": "5ee887de858fae04d843370f",
-    "picture": "https://api.adorable.io/avatars/64/pugh.carr@importance.fr.png",
+    "picture": "assets/img/avatars/pugh-carr.jpg",
     "name": {
       "first": "Pugh",
       "last": "Carr"
@@ -143,7 +143,7 @@
   },
   {
     "_id": "5ee887dee4f5ef9de213ce04",
-    "picture": "https://api.adorable.io/avatars/64/eigh.herrera@sequitur.es.png",
+    "picture": "assets/img/avatars/leigh-herrera.jpg",
     "name": {
       "first": "Leigh",
       "last": "Herrera"
@@ -154,7 +154,7 @@
   },
   {
     "_id": "5ee887dea2c8d89d188e6fa0",
-    "picture": "https://api.adorable.io/avatars/64/rosella.meadows@parcoe.ca.png",
+    "picture": "assets/img/avatars/rosella-meadows.jpg",
     "name": {
       "first": "Rosella",
       "last": "Meadows"
@@ -166,7 +166,7 @@
   },
   {
     "_id": "5ee887de3018d82b0b2ef4a7",
-    "picture": "https://api.adorable.io/avatars/64/nannie.mcgee@enthaze.co.uk.png",
+    "picture": "assets/img/avatars/nannie-mcgee.jpg",
     "name": {
       "first": "Nannie",
       "last": "McGee"
@@ -178,7 +178,7 @@
   },
   {
     "_id": "5ee887de7d5a69135c2e20ac",
-    "picture": "https://api.adorable.io/avatars/64/chavez.castaneda@cytrek.us.png",
+    "picture": "assets/img/avatars/chavez-castaneda.jpg",
     "name": {
       "first": "Chavez",
       "last": "Castaneda"
@@ -189,7 +189,7 @@
   },
   {
     "_id": "5ee887de297dd307cd93df7b",
-    "picture": "https://api.adorable.io/avatars/64/rae.beasley@grandspire.io.png",
+    "picture": "assets/img/avatars/rae-beasley.jpg",
     "name": {
       "first": "Rae",
       "last": "Beasley"
@@ -200,7 +200,7 @@
   },
   {
     "_id": "5ee887de59a03876a4ee35ec",
-    "picture": "https://api.adorable.io/avatars/64/fabien.manaudou@banquego.be.png",
+    "picture": "assets/img/avatars/fabien-manaudou.jpg",
     "name": {
       "first": "Fabien",
       "last": "Manaudou"
@@ -212,7 +212,7 @@
   },
   {
     "_id": "5ee887de33666b8c66193be8",
-    "picture": "https://api.adorable.io/avatars/64/mcclain.dixon@aegisfs.com.png",
+    "picture": "assets/img/avatars/dixon-mcclain.jpg",
     "name": {
       "first": "Dixon",
       "last": "McClain"

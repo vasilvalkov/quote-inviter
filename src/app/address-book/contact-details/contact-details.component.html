@@ -1,0 +1,16 @@
+<app-close-button (close)="onClose()"></app-close-button>
+<picture>
+  <img class="profile-image" [src]="contact.picture" />
+</picture>
+<h2>{{ contact.name.first }} {{ contact.name.last }}</h2>
+<p><strong>{{ contact.company }}</strong></p>
+<p>{{ contact.email }}</p>
+<p>{{ contact.phone }}</p>
+<div>
+  <ng-container *ngIf="selected; else notSelected">
+    <button type="button" app-button (click)="uninvite()">Uninvite</button>
+  </ng-container>
+  <ng-template #notSelected>
+    <button type="button" app-button (click)="invite()">Invite</button>
+  </ng-template>
+</div>
