@@ -1,7 +1,11 @@
 <app-header></app-header>
+
 <main>
   <app-address-book></app-address-book>
-  <app-card class="cart" *ngIf="isCartOpen | async">
-    <app-cart></app-cart>
-  </app-card>
+
+  <div class="cart-wrapper" *ngIf="isCartOpen | async">
+    <app-card>
+      <app-cart></app-cart>
+    </app-card>
+  </div>
 </main>

@@ -10,7 +10,6 @@ import { ThemeToggleComponent } from './components/theme-toggle/theme-toggle.com
 import { CardComponent } from './components/card/card.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
 import { ButtonComponent } from './components/button/button.component';
-import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { BadgeDirective } from './directives/badge.directive';
 import { CloseButtonComponent } from './components/close-button/close-button.component';
 
@@ -22,7 +21,6 @@ import { CloseButtonComponent } from './components/close-button/close-button.com
     CardComponent,
     ListItemComponent,
     ButtonComponent,
-    CheckboxComponent,
     BadgeDirective,
     CloseButtonComponent
   ],
@@ -44,7 +42,6 @@ import { CloseButtonComponent } from './components/close-button/close-button.com
     CardComponent,
     ListItemComponent,
     ButtonComponent,
-    CheckboxComponent,
     BadgeDirective,
     CloseButtonComponent
   ]

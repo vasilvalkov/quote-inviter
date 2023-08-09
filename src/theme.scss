@@ -84,7 +84,7 @@ html {
   scrollbar-width: thin;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   html {
     /* Official styles (Firefox) */
     scrollbar-color: var(--color-gray-300) var(--color-background);
@@ -93,7 +93,6 @@ html {
 
   ::-webkit-scrollbar {
     width: 10px;
-    background-color: var(--color-background);
   }
 
   ::-webkit-scrollbar-thumb {

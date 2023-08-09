@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Contact, GroupContact, InviteesService } from 'src/app/shared';
 
 @Component({
@@ -9,8 +9,6 @@ import { Contact, GroupContact, InviteesService } from 'src/app/shared';
 export class GroupDetailsComponent {
 
   @Input() group: GroupContact;
-
-  @Output() closed = new EventEmitter<void>();
 
   constructor(private inviteesService: InviteesService) { }
 

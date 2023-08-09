@@ -1,6 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
-import { coerceBooleanProperty } from '../utils';
+import { coerceBooleanProperty } from '@angular/cdk/coercion';
 
 @Injectable({
   providedIn: 'root',
@@ -25,7 +25,7 @@ export class ThemeService {
   init(): void {
     const storedMode = coerceBooleanProperty(localStorage.getItem(this.storageKey));
     this._isDarkMode = storedMode;
-    this.toggleBodyThemeClass();;
+    this.toggleBodyThemeClass();
   }
 
   private toggleBodyThemeClass(): void {

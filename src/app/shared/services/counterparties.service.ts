@@ -60,8 +60,7 @@ export class CounterpartiesService {
 
     const groups: GroupContact[] = [...groupsMap.entries()].map(([name, counterparties]) => {
       return {
-        // id: window.crypto.randomUUID(),
-        id: Math.random().toString(),
+        id: window.isSecureContext ? window.crypto.randomUUID() : Math.random().toString(),
         data: { counterparties },
         name,
         selected: false,

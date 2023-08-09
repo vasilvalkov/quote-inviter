@@ -8,13 +8,25 @@ $alignment-padding: 8px;
   padding-top: $alignment-padding;
 }
 
+h2 {
+  padding-left: $alignment-padding;
+  padding-right: 32px;
+  margin-bottom: 8px;
+}
+
 .summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 8px;
   padding: 4px 10px;
   height: 24px;
   line-height: 24px;
+  cursor: pointer;
+
+  h4 {
+    font-weight: 400;
+  }
 
   .action-wrapper {
     display: flex;
@@ -24,21 +36,11 @@ $alignment-padding: 8px;
 }
 
 .contacts-list {
+  margin-right: -8px;
+  padding-right: 8px;
   overflow-y: auto;
 
   input {
     pointer-events: none;
   }
-}
-
-h2 {
-  padding-left: $alignment-padding;
-  padding-right: 32px;
-  margin-bottom: 16px;
-}
-
-app-close-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
 }

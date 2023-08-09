@@ -7,7 +7,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export class CartService {
 
   private _isOpen = new BehaviorSubject(
-    window.matchMedia("(min-width: 768px)").matches
+    window.matchMedia("(min-width: 48rem)").matches
   );
 
   get isOpen(): Observable<boolean> {

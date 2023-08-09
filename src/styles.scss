@@ -5,13 +5,13 @@
 @include theme.typography();
 
 html {
-  --mobile-threshold: (min-width: 768px);
+  --mobile-threshold: (min-width: 48rem);
 }
 
 body {
   --spacing-default: 16px;
   
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     --spacing-default: 32px;
   }
 

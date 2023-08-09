@@ -2,10 +2,10 @@
   <button class="details-container" (click)="onSelectItem()">
     <div class="avatar-wrapper">
       <ng-container *ngIf="$any(contact.data).picture; else groupImg">
-        <img [src]="$any(contact.data).picture" alt="" />
+        <img [src]="$any(contact.data).picture" alt="Profile picture of {{ contact.name }}" />
       </ng-container>
       <ng-template #groupImg>
-        <i-feather class="group-icon" name="users"></i-feather>
+        <i-feather class="group-icon" name="users" aria-hidden="true"></i-feather>
       </ng-template>
     </div>
 

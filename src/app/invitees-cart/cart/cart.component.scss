@@ -4,10 +4,10 @@ $internal-spacing: 8px;
   display: flex;
   flex-direction: column;
   max-height: 100%;
-  width: min(100%, 768px);
+  width: min(100%, 48rem);
   height: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     height: revert;
   }
 }
@@ -45,10 +45,15 @@ $internal-spacing: 8px;
 
   &>button {
     flex: 1;
+
+    i-feather {
+      margin-right: 16px;
+    }
   }
 }
 
 ul {
-  margin: 16px 0;
+  margin: 16px -8px 0 0;
+  padding-right: 8px;
   overflow-y: auto;
 }

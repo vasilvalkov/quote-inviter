@@ -15,6 +15,7 @@
 <section class="actions-wrapper">
   <button type="button" app-button color="primary" [disabled]="(invitees|async).length === 0"
     (click)="onSendInvitations()">
+    <i-feather name="send"></i-feather>
     Send&nbsp;<app-invitees-count></app-invitees-count>&nbsp;invitations
   </button>
 </section>

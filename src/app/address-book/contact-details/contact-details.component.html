@@ -1,6 +1,5 @@
-<app-close-button (close)="onClose()"></app-close-button>
 <picture>
-  <img class="profile-image" [src]="contact.picture" />
+  <img class="profile-image" [src]="contact.picture" alt="Profile picture of {{ contact.name }}" />
 </picture>
 <h2>{{ contact.name.first }} {{ contact.name.last }}</h2>
 <p><strong>{{ contact.company }}</strong></p>

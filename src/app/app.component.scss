@@ -17,7 +17,7 @@ main {
   /* Enable hiding of address bar on mobile when portrait */
   min-height: 100%;
 
-  .cart {
+  .cart-wrapper {
     position: absolute;
     top: var(--spacing-default);
     right: var(--spacing-default);
@@ -25,7 +25,6 @@ main {
     left: var(--spacing-default);
     display: flex;
     flex-direction: column;
-    min-width: 300px;
 
     &::before {
       content: "";
@@ -39,17 +38,25 @@ main {
       border-right: 25px solid transparent;
       border-bottom: calc(18px + var(--spacing-default)) solid var(--color-secondary-bg);
     }
+
+    app-card {
+      max-height: 100%;
+      height: 100%;
+    }
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 32rem) {
     /* Remove for non-mobile browsers and landscape */
     min-height: revert;
   }
 
-  @media (min-width: 768px) {
-    .cart {
+  @media (min-width: 48rem) {
+    .cart-wrapper {
       left: unset;
-      bottom: unset;
+
+      app-card {
+        height: revert;
+      }
     }
   }
 }
