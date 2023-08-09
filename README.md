@@ -10,6 +10,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+Run `npm run build:github` to build for GitHub Pages, then push to `main` branch.
+
+## Live
+
+https://github.com/vasilvalkov/quote-inviter
+
 ## Development notes
 
 * Project data is based on this starter repo https://stackblitz.com/edit/mitigram-starter
