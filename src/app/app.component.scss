@@ -36,7 +36,7 @@ main {
       transform: translateY(-100%);
       border-left: 25px solid transparent;
       border-right: 25px solid transparent;
-      border-bottom: calc(18px + var(--spacing-default)) solid var(--color-secondary-bg);
+      border-bottom: var(--spacing-default) solid var(--color-secondary-bg);
     }
 
     app-card {

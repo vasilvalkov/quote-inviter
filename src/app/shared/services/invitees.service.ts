@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Contact, GroupContact, IndividualContact } from '../models/contact';
 import { BehaviorSubject, Observable, combineLatest } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
+
+import { Contact, GroupContact, IndividualContact } from '../models/contact';
+
 
 @Injectable({
   providedIn: 'root'

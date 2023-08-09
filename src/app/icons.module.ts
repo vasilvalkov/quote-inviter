@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-
 import { FeatherModule } from 'angular-feather';
 import { Check, Inbox, Moon, Sun, Users, X, AtSign, Send } from 'angular-feather/icons';
 

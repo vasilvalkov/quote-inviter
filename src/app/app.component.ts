@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { Counterparty, CounterpartiesService } from './shared';
 import { Observable } from 'rxjs';
 
+import { Counterparty, CounterpartiesService } from './shared';
 import { CartService } from './invitees-cart/cart.service';
 
 @Component({
